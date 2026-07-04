@@ -36,8 +36,7 @@ app.add_middleware(
 def health():
     return {
         "status": "ok",
-        "service": "ConnectNow Unified API",
-        "db_path": DB_PATH
+        "service": "ConnectNow Unified API"
     }
 
 

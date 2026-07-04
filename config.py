@@ -33,13 +33,11 @@ BASE_DIR = os.path.dirname(
 # DATABASE
 # ==========================================================
 
+DATABASE_URL = os.getenv("DATABASE_URL")
+
 DB_NAME = "connectnow.db"
 
-DB_PATH = os.path.join(
-    BASE_DIR,
-    DB_NAME
-)
-
+DB_PATH = os.path.join(BASE_DIR, DB_NAME)
 
 # ==========================================================
 # JWT
